@@ -1,18 +1,9 @@
+def get_name(person):
+    return person["name"]
 
-#  def test_add(self):
-#       add_result = add( 1, 2 )
-#       self.assertEqual( 3, add_result )
+def get_favourite_tv_show(person):
+    return person["favourites"]["tv_show"]
 
-# def add(num_1, num_2):
-#     return num_1 + num_2
-
-# --------------------------------------
-#  def test_getting_name(self):
-#     result = get_name(self.person5)
-#     self.assertEqual("Daphne", result)
-
-from re import X
-
-
-def getting_name(person):
-result = person ["name"]
+def likes_to_eat(person, food):
+    if food in person["favourites"]["snacks"]:
+     return True
